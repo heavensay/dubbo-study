@@ -27,7 +27,7 @@
 
     <properties>
         <skip_maven_deploy>true</skip_maven_deploy>
-        <dubbo.version>2.8.4</dubbo.version>
+        <dubbo.version>2.6.2</dubbo.version>
         <springframework.version>5.0.2.RELEASE</springframework.version>
     </properties>
 

@@ -16,8 +16,12 @@
  */
 package com.alibaba.dubbo.demo;
 
+import com.alibaba.dubbo.demo.bean.User;
+
 public interface DemoService {
 
     String sayHello(String name);
+
+    String createUser(User user);
 
 }
