@@ -18,10 +18,23 @@ package com.alibaba.dubbo.demo;
 
 import com.alibaba.dubbo.demo.bean.User;
 
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+
+/**
+ * @Path,@Consumes,@GET等标签用于支持restful风格的远程调用。如果消费端不是dubbo调用，这些annotation可以放到实现类中
+ */
+@Path("demo")
 public interface DemoService {
 
-    String sayHello(String name);
+    @Path("sayHello")
+    @Consumes({MediaType.APPLICATION_JSON, MediaType.TEXT_XML})
+    @GET
+    String sayHello(@QueryParam(value = "name") String name);
 
+    @Path("createUser")
+    @Consumes({MediaType.APPLICATION_JSON, MediaType.TEXT_XML})
+    @GET
     String createUser(User user);
 
 }
