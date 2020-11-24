@@ -27,7 +27,7 @@
 
     <properties>
         <skip_maven_deploy>true</skip_maven_deploy>
-        <dubbo.version>2.6.2</dubbo.version>
+        <dubbo.version>2.7.8</dubbo.version>
         <springframework.version>5.0.2.RELEASE</springframework.version>
     </properties>
 
@@ -39,7 +39,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
             <version>${dubbo.version}</version>
             <exclusions>
@@ -99,7 +99,7 @@
 
 
         <dependency>
-            <groupId>com.alibaba</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-rpc-rest</artifactId>
             <version>${dubbo.version}</version>
         </dependency>

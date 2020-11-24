@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.alibaba.dubbo.demo.provider";
+//option java_outer_classname = "GoodsService";
+
+
+// The greeting service definition.
+service GoodsService {
+  // Sends a greeting
+  rpc queryGoods (GoodsRequest) returns (GoodsResponse);
+}
+
+// The request message containing the user's name.
+message GoodsRequest {
+  int32 goodsId = 1;
+}
+
+// The response message containing the greetings
+message GoodsResponse {
+  string goods = 1;
+}
